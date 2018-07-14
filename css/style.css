@@ -23,6 +23,15 @@ html,body {
 
 }
 
+.logo {
+	width: 15%;
+}
+
+.logo > img {
+	width: 100%;
+	height: 100%;
+}
+
 .navbar {
 	display: flex;
  	height: 100px;
@@ -177,6 +186,11 @@ button {
 	height: 83px;
 }
 
+.services > #tabs > ul > li {
+	display: block;
+	
+}
+
 .services > #tabs > ul > li > a{
 	flex-basis: auto;
 	padding: 0.6rem;
@@ -210,7 +224,16 @@ footer {
 
 /*Media Queries*/
 @media only screen and (min-width: 769px) {
-	
+
+.logo {
+	width: 13%;
+}
+
+.logo > img {
+	width: 100%;
+	height: 100%;
+}
+
 nav > ul >*{
 	flex-basis: auto;
 	padding-right: 1.5rem;
@@ -265,5 +288,90 @@ button {
 }
 
 @media only screen and (max-width: 425px) {
-	
+
+	#wrapper {
+		width: 95%;
+	}
+	.quote {
+		display: none;
+	}
+
+	.navbar > nav > ul > li > a{ 
+	font-size: 0.9em;
+	padding:  0 0.3rem;
+	}
+
+	.navbar{ 
+	height: 80px;
+	}
+
+	.navbar {
+		padding-bottom: 0;
+	}
+
+	.logo {
+	width: 20%;
+	height: 50%;
+	margin-top: 1.3rem;
+	}
+
+	.logo > img {
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	margin-bottom: 0;
+}
+
+
+header > button {
+	width: 23%;
+	font-size: 0.1em;
+	bottom: 27%;
+}
+
+.caption > .icons{
+	align-items: center;
+	flex-direction: column;
+}
+
+.caption > .icons > img {
+	width: 100px;
+	height: 100px;
+}
+.caption > p {
+	text-align: justify;
+}
+
+.fadein {
+	margin-bottom: 0;
+}
+
+.services > #tabs > ul {
+	height: 250px;
+}
+
+.services > #tabs > ul > li {
+	width: 100%;
+	border: 1px solid #fff;
+}
+
+.services > #tabs > ul > li > a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.services > .map-content > img {
+	height: 200px;
+} 
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 }
